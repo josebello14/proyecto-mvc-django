@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio - Django</title>
+
+    <style>
+        .alerta { padding: 10px; border-radius: 5px; color: white; margin-bottom: 10px; }
+        .alerta-success { background-color: #28a745; }
+        .alerta-error { background-color: #dc3545; }
+        .alerta-warning { background-color: #ffc107; color: black; }
+    </style>
+
 </head>
+<body>
+
+    <!-- INICIO SISTEMA DE MENSAJES -->
+    {% if messages %}
+        <div>
+            {% for message in messages %}
+                <!-- 2. Django pegará la palabra 'success' o 'error' aquí dinámicamente -->
+                <p class="alerta alerta-{{ message.tags }}">
+                    {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <!-- FIN SISTEMA DE MENSAJES -->
+
     <h1>Mis Tareas (CRUD NoSQL)</h1>
     <form method="post">
         {% csrf_token %}
@@ -27,5 +50,6 @@
             <li>No hay tareas registradas aun.</li>
         {% endfor %}
     </ul>
+
 </body>
 </html>
