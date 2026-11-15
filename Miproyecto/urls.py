@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from inicio.views import gestionar_tareas, completar_tarea, eliminar_tarea
+from inicio.views import gestionar_tareas, completar_tarea, eliminar_tarea, index_prov #import de la vista provisional
 
 # from . import views
 
@@ -26,6 +26,7 @@ urlpatterns = [
 
     path('completar/<str:tarea_id>', completar_tarea, name='completar'),
     path('eliminar/<str:tarea_id>', eliminar_tarea, name='eliminar'),
+    path('index_prov/', index_prov, name='vista_prov') #path para la vista provisional
 ]
 
 

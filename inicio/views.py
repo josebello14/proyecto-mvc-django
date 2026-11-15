@@ -58,5 +58,6 @@ def eliminar_tarea(request, tarea_id):
 
     return redirect('inicio')
 
-    
-    
+#funcion para renderizar la vista provisional
+def index_prov(request):
+    return render(request, 'inicio/index_prov.html')

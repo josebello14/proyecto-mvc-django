@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'inicio/styles.css' %}">
+    <title>inicio de prueba</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Autos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Usuario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Bienvenido a nuestro sitio web</h1>
+            <button>Explorar</button>
+        </div>
+    </section>
+    <div class="contenedor-autos">
+        <article>
+            <img src="{% static 'inicio/images/8 - rhXY5hC.png' %}" alt="">
+            <div>
+                <h1>gtr</h1>
+                <h1>15000</h1>
+                <button>Agregar al carrito</button>
+            </div>
+        </article>
+        <article>
+            <img src="{% static 'inicio/images/38 - 1Oo5Bp3.png' %}" alt="">
+            <div>
+                <h1>monaro</h1>
+                <h1>20000</h1>
+                <button>Agregar al carrito</button>
+            </div>
+        </article>
+        <article>
+            <img src="{% static 'inicio/images/35 - fE671Sk.png' %}" alt="">
+            <div>
+                <h1>carrera gt</h1>
+                <h1>23000</h1>
+                <button>Agregar al carrito</button>
+            </div>
+        </article>
+    </div>
+    <h1>inicio de prueba</h1>
+</body>
+</html>

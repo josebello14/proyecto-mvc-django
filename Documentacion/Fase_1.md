@@ -26,8 +26,8 @@ La plataforma está diseñada para cualquier persona interesada en adquirir un v
 
 Para garantizar un desarrollo robusto y escalable, el proyecto se apoyará en las siguientes herramientas:
 
-- **Python**: Lenguaje de programación principal.
-- **Django**: Framework de desarrollo web. Se utilizará su arquitectura basada en "apps" (aplicaciones o módulos). Esto significa que el proyecto se dividirá en partes lógicas e independientes (por ejemplo, una app para usuarios, una app para los autos y una app para las compras), lo que facilita el orden y el mantenimiento del código.
+- **Python**: Lenguaje de programación principal, version 3.12.3.
+- **Django**: Framework de desarrollo web. Se utilizará su arquitectura basada en "apps" (aplicaciones o módulos). Esto significa que el proyecto se dividirá en partes lógicas e independientes (por ejemplo, una app para usuarios, una app para los autos y una app para las compras), lo que facilita el orden y el mantenimiento del código, version 6.1.3.
 - **MongoDB**: Base de datos no relacional. Se elegirá por su flexibilidad para almacenar la información de los vehículos y de los usuarios, permitiendo adaptarse fácilmente a futuros cambios en los datos sin necesidad de estructuras rígidas.
 
 ## Arquitectura del Sistema (MVC)
