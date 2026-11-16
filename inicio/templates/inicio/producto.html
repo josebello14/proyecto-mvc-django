@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+</head>
+<body>
+    <h1>Producto</h1>
+    <div class="contenedor-autos">
+        {% for auto in autos %}
+        <article>
+            <img src="{% static 'inicio/images/' %}{{ auto.imagen }}" alt="Foto de {{ auto.nombre }}">
+            <div>
+                <h1>{{ auto.nombre }}</h1>
+                <h1>{{ auto.precio }}</h1>
+                <button>Agregar al carrito</button>
+            </div>
+        </article>
+        {% endfor %}
+</body>
+</html>

@@ -1,4 +1,4 @@
-from mongoengine import Document, StringField, BooleanField 
+from mongoengine import Document, StringField, BooleanField, IntField
 
 # Create your models here.
 
@@ -9,3 +9,12 @@ class Tarea(Document):
 
     def str(self):
         return self.titulo
+
+# Modelo para la vista del catalogo
+class Autos(Document):
+    nombre = StringField(max_length=100, required=True)
+    precio = IntField(blank=True)
+    imagen = StringField(blank=True)
+
+    def __str__(self):
+        return self.nombre

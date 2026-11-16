@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Tarea 
+from .models import Autos
 
 # Create your views here.
 
@@ -61,3 +62,10 @@ def eliminar_tarea(request, tarea_id):
 #funcion para renderizar la vista provisional
 def index_prov(request):
     return render(request, 'inicio/index_prov.html')
+
+def Producto(request):
+    lista_autos = Autos.objects
+    contexto = {
+        'autos': lista_autos
+    }
+    return render(request, 'inicio/producto.html', contexto)
